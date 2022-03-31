@@ -1,0 +1,123 @@
+@font-face {
+ font-family: "ThankYouSoMuchFont";
+ src: url("fonts/ThankYouSoMuchFont.otf") format("opentype");
+}
+@font-face {
+ font-family: "Poppins-Regular";
+ src: url("fonts/Poppins-Regular.ttf") format("ttf");
+}
+@font-face {
+ font-family: "SmoothFantasyPersonalUse";
+ src: url("fonts/SmoothFantasyPersonalUse.ttf") format("opentype");
+}
+body {
+    background-color: #222737;
+}
+.bg_lets_do {
+    top: -300px;
+    left: -650px;
+    z-index: -1;
+}
+header .logo {
+    font-family: "ThankYouSoMuchFont";
+    font-size: 46px;
+}
+header .nav {
+    justify-content: flex-end;
+}
+header .nav a {
+    color: #fff;
+    opacity: .5;
+    font-family: "Poppins-Regular";
+    font-size: 18px;
+}
+header .nav a.active, header .nav a:hover {
+    color: #fff;
+    opacity: 1;
+}
+header .nav a.active:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: calc(50% - 4px);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #65E6CF;
+    margin: 0 auto;
+}
+header .btn {
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    border-radius: 18px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.content .h1 {
+    font-family: "SmoothFantasyPersonalUse";
+    color: #fff;
+    font-size: 90px;
+}
+.content p {
+    font-size: 24px;
+}
+.content .uniswap, .content .pancakeswap {
+    background-color: #65E6CF;
+    font-family: "SmoothFantasyPersonalUse";
+    font-size: 30px;
+    color: #222737;
+}
+.content .uniswap img, .content .pancakeswap img {
+    height: 50px;
+}
+.content .socials {
+    border-color: #707070;
+}
+.content .socials img {
+    max-width: 100%;
+}
+.content .creditcard > div {
+    max-width: 400px;
+    border-radius: 35px;
+    margin-top: 150px;
+    margin-left: 80px;
+}
+.content .creditcard img {
+    max-width: 100%;
+}
+.bg_ellipse {
+    z-index: -1;
+}
+.bg_ellipse img {
+    left: -500px;
+    top: -300px;
+}
+@media (max-width: 1399px) {
+    .content .uniswap, .content .pancakeswap {
+        font-size: 22px;
+    }
+    .pancakeswap img {
+        height: 30px;
+    }
+}
+@media (max-width: 1199px) {
+    .content .uniswap, .content .pancakeswap {
+        padding: 0.375rem 0.75rem !important;
+    }
+    .content .h1 {
+        font-size: 85px;
+    }
+}
+@media (max-width: 991px) {
+    header .col-lg-1 {
+        text-align: center;
+    }
+    header .nav {
+        justify-content: center !important;
+    }
+    .content .creditcard > div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
